@@ -1,6 +1,6 @@
 # SWS AI Docs 📄
 
-> A smart PDF document manager built with Flutter and Firebase — upload, manage, and get notified, all in one place.
+> A  PDF document manager built with Flutter and Firebase — upload, manage, and get notified, all in one place.
 
 ---
 
@@ -120,5 +120,3 @@ Security rules are set to open for development. Tighten them before going to pro
 **Sanjey S** — [GitHub @Sanjeyshub45](https://github.com/Sanjeyshub45)
 
 ---
-
-*Made with ❤️ using Flutter & Firebase*
