@@ -52,7 +52,9 @@ class UploadService {
       return docId;
     } catch (e) {
       onError(e.toString());
-      rethrow;
+      // Do NOT rethrow — caller does not await this Future, so
+      // rethrowing would produce an unhandled exception in the isolate.
+      return ''; // satisfy non-null Future<String> return type
     }
   }
 

@@ -1,4 +1,4 @@
-package com.swsai.sws_ai_docs
+package com.fnext.swsaianalyzer
 
 import io.flutter.embedding.android.FlutterActivity
 

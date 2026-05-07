@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50362085656",
+    "project_id": "swsaidocanalyzer",
+    "storage_bucket": "swsaidocanalyzer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50362085656:android:92346dd68685ec8485ee6d",
+        "android_client_info": {
+          "package_name": "com.fnext.swsaianalyzer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyX-AwjkxDc2-3iBmRannRCUKJ31hjTYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
