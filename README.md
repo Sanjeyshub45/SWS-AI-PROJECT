@@ -10,7 +10,7 @@
 
 | Upload Screen | Documents Library | Notifications |
 |:---:|:---:|:---:|
-| ![Upload](YOUR_UPLOAD_SCREEN_IMAGE_URL) | ![Documents](YOUR_DOCUMENTS_SCREEN_IMAGE_URL) | ![Notifications](YOUR_NOTIFICATIONS_SCREEN_IMAGE_URL) |
+| ![Upload](https://res.cloudinary.com/djmywmg2m/image/upload/v1778143604/uploading_screen_nftaio.jpg) | ![Documents](YOUR_DOCUMENTS_SCREEN_IMAGE_URL) | ![Notifications](YOUR_NOTIFICATIONS_SCREEN_IMAGE_URL) |
 
 ---
 
@@ -18,7 +18,6 @@
 
 > **[⬇️ Download APK — Click Here](YOUR_APK_DOWNLOAD_LINK)**
 
-_(Replace the link above with your Firebase App Distribution, Google Drive, or GitHub Release link)_
 
 ---
 
