@@ -1,5 +1,6 @@
 // lib/core/services/fcm_service.dart
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart' show Color;
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -67,29 +68,49 @@ class FCMService {
         .set({'token': token, 'updatedAt': FieldValue.serverTimestamp()});
   }
 
+  /// Public method — call this from anywhere to show a local push notification.
+  /// [isSuccess] controls the icon tint (green vs red).
+  static Future<void> showNotification({
+    required String title,
+    required String body,
+    bool isSuccess = true,
+  }) async {
+    try {
+      await _localNotifications.show(
+        DateTime.now().millisecondsSinceEpoch.remainder(100000),
+        title,
+        body,
+        NotificationDetails(
+          android: AndroidNotificationDetails(
+            'sws_uploads',
+            'Upload Notifications',
+            channelDescription: 'File upload completion alerts',
+            importance: Importance.high,
+            priority: Priority.high,
+            icon: '@mipmap/ic_launcher',
+            color: isSuccess
+                ? const Color(0xFF2E7D32)
+                : const Color(0xFFE53935),
+          ),
+          iOS: const DarwinNotificationDetails(
+            presentAlert: true,
+            presentBadge: true,
+            presentSound: true,
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('[FCM] showNotification failed: $e');
+    }
+  }
+
   static void _showLocalNotification(RemoteMessage message) {
     final notification = message.notification;
     if (notification == null) return;
-
-    _localNotifications.show(
-      notification.hashCode,
-      notification.title,
-      notification.body,
-      const NotificationDetails(
-        android: AndroidNotificationDetails(
-          'sws_uploads',
-          'Upload Notifications',
-          channelDescription: 'File upload completion alerts',
-          importance: Importance.high,
-          priority: Priority.high,
-          icon: '@mipmap/ic_launcher',
-        ),
-        iOS: DarwinNotificationDetails(
-          presentAlert: true,
-          presentBadge: true,
-          presentSound: true,
-        ),
-      ),
+    showNotification(
+      title: notification.title ?? 'SWS AI Docs',
+      body: notification.body ?? '',
+      isSuccess: true,
     );
   }
 }
