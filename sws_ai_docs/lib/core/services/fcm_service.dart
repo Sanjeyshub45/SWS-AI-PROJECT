@@ -66,8 +66,8 @@ class FCMService {
       notification.hashCode,
       notification.title,
       notification.body,
-      NotificationDetails(
-        android: const AndroidNotificationDetails(
+      const NotificationDetails(
+        android: AndroidNotificationDetails(
           'sws_uploads',
           'Upload Notifications',
           channelDescription: 'File upload completion alerts',
@@ -75,7 +75,7 @@ class FCMService {
           priority: Priority.high,
           icon: '@mipmap/ic_launcher',
         ),
-        iOS: const DarwinNotificationDetails(
+        iOS: DarwinNotificationDetails(
           presentAlert: true,
           presentBadge: true,
           presentSound: true,

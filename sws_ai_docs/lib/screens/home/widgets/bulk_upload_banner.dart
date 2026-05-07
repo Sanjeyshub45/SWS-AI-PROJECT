@@ -52,7 +52,7 @@ class _BulkUploadBannerState extends State<BulkUploadBanner>
         boxShadow: [
           BoxShadow(
             color: (isComplete ? AppColors.success : AppColors.primary)
-                .withOpacity(0.3),
+                .withValues(alpha: 0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -88,7 +88,7 @@ class _BulkUploadBannerState extends State<BulkUploadBanner>
                     '${widget.completedCount} of ${widget.fileCount} complete',
                     style: TextStyle(
                       fontFamily: 'Livvic',
-                      color: Colors.white.withOpacity(0.8),
+                      color: Colors.white.withValues(alpha: 0.8),
                       fontSize: 12,
                     ),
                   ),
