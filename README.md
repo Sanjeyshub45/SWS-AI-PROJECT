@@ -10,7 +10,7 @@
 
 | Upload Screen | Documents Library | Notifications |
 |:---:|:---:|:---:|
-| ![Upload](https://res.cloudinary.com/djmywmg2m/image/upload/v1778143604/uploading_screen_nftaio.jpg) | ![Documents](YOUR_DOCUMENTS_SCREEN_IMAGE_URL) | ![Notifications](YOUR_NOTIFICATIONS_SCREEN_IMAGE_URL) |
+| ![Before Uploading](https://res.cloudinary.com/djmywmg2m/image/upload/v1778143604/uploading_screen_nftaio.jpg) | ![After Uploading](https://res.cloudinary.com/djmywmg2m/image/upload/v1778143695/after_uploaded_wkzfrz.jpg) | ![Notifications](YOUR_NOTIFICATIONS_SCREEN_IMAGE_URL) |
 
 ---
 
