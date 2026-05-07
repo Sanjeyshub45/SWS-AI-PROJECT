@@ -1,0 +1,60 @@
+name: sws_ai_docs
+description: SWS AI Document Management App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.1.0
+  firebase_storage: ^12.1.0
+  cloud_firestore: ^5.1.0
+  firebase_messaging: ^15.0.0
+
+  # File Picker
+  file_picker: ^8.0.3
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_local_notifications: ^17.1.1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  percent_indicator: ^4.2.3
+  badges: ^3.1.2
+  intl: ^0.19.0
+  gap: ^3.0.1
+
+  # Utils
+  uuid: ^4.4.0
+  path: ^1.9.0
+  mime: ^1.0.5
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Livvic
+      fonts:
+        - asset: assets/fonts/Livvic-Regular.ttf
+        - asset: assets/fonts/Livvic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Livvic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Livvic-Bold.ttf
+          weight: 700
+  assets:
+    - assets/fonts/
+    - assets/images/
